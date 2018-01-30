@@ -9,9 +9,7 @@ function draw() {
         background(0);
 
     //line following mouse
-    line(mouse)
     //custome shape
-    function circles() {
         beginShape();
         noFill();
         strokeWeight(5);
@@ -25,6 +23,5 @@ function draw() {
             vertex (x, y);
         }
         endShape(CLOSE);
-        }  
     
 }
