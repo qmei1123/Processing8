@@ -11,9 +11,7 @@ function draw() {
     //line following mouse
     line(mouse)
     //custome shape
-    
-    for (var x = 0; x <= width; a +=100) {
-      function circles() {
+    function circles() {
         beginShape();
         noFill();
         strokeWeight(5);
@@ -22,12 +20,14 @@ function draw() {
         let vertices = map(mouseY, 0, width, 5, 100);
 
         for(let a = 0; a < 360; a += vertices) {
-            let x = 100 * sin(a) + 180;
-            let y = 100 * cos(a) + 180;
+            let x = 50 * sin(a) + 180;
+            let y = 50 * cos(a) + 180;
             vertex (x, y);
         }
         endShape(CLOSE);
         }  
+    for (var x = 0; x <= width; x +=100) {
+        circles();
     }
     
 }
