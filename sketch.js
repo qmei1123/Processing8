@@ -26,8 +26,5 @@ function draw() {
         }
         endShape(CLOSE);
         }  
-    for (var x = 0; x <= width; x +=100) {
-        circles();
-    }
     
 }
