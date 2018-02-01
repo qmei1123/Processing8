@@ -1,15 +1,13 @@
-var secondX = 20;
-var secondY = 40;
+
 function setup() {
     createCanvas(800, 800);
     angleMode(DEGREES);
-
 }
 
 function draw() { 
     background(0);
     //line following mouse
-    line(mouseX, mouseY, mouseX*secondX*2, mouseY*secondY);
+    line(mouseX, mouseY, mouseX*20, mouseY*60);
     //custome shape
     beginShape();
     noFill();
