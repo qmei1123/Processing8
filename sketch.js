@@ -9,7 +9,7 @@ function setup() {
 function draw() { 
     background(0);
     //line following mouse
-    line(mouseX, mouseY, mouseX*secondX, mouseY*secondY);
+    line(mouseX, mouseY, mouseX*secondX*2, mouseY*secondY);
     //custome shape
     beginShape();
     noFill();
